@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java code </title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        #head {
+            background-color: blue;
+            height: 10vmin;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 3vmin;
+        }
+
+        #innerbox {
+            height: 8vmin;
+            width: 8vmin;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEnC-VriiS-WqniZv2fzp8xwmvxw-uEbRPhg&s");
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10vmin;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .box p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 5vmin;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        main {
+            padding: 2vmin;
+
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            background-color: rgb(225, 233, 232);
+            margin-top: 10px;
+            border-radius: 2vmin;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.558);
+        }
+
+        .heading {
+            width: 100%;
+            height: 8vmin;
+            background-color: aqua;
+            border-radius: 2vmin;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 3vmin;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+
+        }
+
+        .main_content {
+            display: flex;
+            flex-direction: column;
+            align-items: self-start;
+            padding: 2vmin;
+
+        }
+
+        .code-box {
+            height: auto;
+            width: 100%;
+            box-shadow: inset 1px 1px 1px black;
+             border: 2px solid rgb(47, 255, 68);
+            background-color: rgba(32, 59, 195, 0.847);
+            border-left: 0.8vmin solid rgb(18, 202, 5);
+            padding: 4px;
+           scroll-behavior: smooth;
+           overflow: hidden;
+
+           overflow-x: scroll;
+           border-radius: 5px;
+           scrollbar-width: none;
+padding: 5px;
+        }
+        .code-box p{
+            color: rgb(205, 235, 239);
+            font-size: 2vmin;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 10px;
+        }
+        span{
+            color: rgb(255, 208, 0);
+        }
+        #books{
+            background-color: rgb(201, 142, 23);
+            border-radius: 4px;
+            padding: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 2px solid rgb(47, 255, 68);
+            box-shadow: inset 1px 1px 1px black;
+        }
+a{
+    text-decoration: none;
+}
+.info{
+    color: rgb(237, 13, 13);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vmin;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <div class="box">
+                <div id="innerbox" ></div>
+                <p>JAVA CODE</p>
+                <a href="https://shivamkumar037.github.io/book-world/"><p id="books">Library</p></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- <div class="content">
+            <div class="heading">java code</div>
+            <div class="main_content">
+                <p class="info"></p>
+                <div class="code-box"><p>ssdedwededwdweweweweefweefweefwfwefwewfweweffwqesssceewhw</p></div>
+
+            </div>
+        </div> -->
+        <div class="content">
+            <div class="heading">1. Char replace in String  </div>
+            <div class="main_content">
+                <p class="info">This code replace a charcter in String</p>
+                <div class="code-box"><p>import java.util.Scanner;<br>
+                    <span>class</span>   Demo{<br>
+                        public String change(String str,char char1,int index){<br>
+                            String str2;<br>
+                            if(index==0){<br>
+                                str2=char1+str.substring(1);<br>
+                            }else {<br>
+                                str2=str.substring(0,index)+char1+str.substring(index+1);<br>
+                            }<br>
+                            return str2;<br>
+                        }<br>
+                    }<br>
+                    <span>class</span>  Main{<br>
+                        public static  void main(String args[]){<br>
+                            Scanner input=new Scanner(System.in);<br>
+                            Demo obj=new Demo();<br>
+                            System.out.println("Enter String");<br>
+                            String str=input.nextLine();<br>
+                            System.out.println("inter index");<br>
+                            int index= input.nextInt();<br>
+                            if(index>=str.length()){<br>
+                                System.out.println("Index of Bound");<br>
+                            }else{<br>
+                                System.out.println("Enter char for replace");<br>
+                                char char1=input.next().charAt(0);<br>
+                                String str2=obj.change(str,char1,index);<br>
+                                System.out.println("Before:- "+str);<br>
+                                System.out.println("After :- "+str2);<br>
+
+
+                            }<br>
+                        }<br>
+                    }<br>
+                    </p></div>
+
+
+
+
+
+            </div>
+        </div>
+
+ <div class="content">
+            <div class="heading">2. Prime Or Not</div>
+            <div class="main_content">
+                <p class="info"> This code check the number is prime or not</p>
+                <div class="code-box"><p>import java.util.Scanner;<br>
+<span>class</span> Main{<br>
+    public static void main(String args[]){<br>
+        Scanner input =new Scanner(System.in);<br>
+
+     System.out.println("Enter Your Number ");<br>
+     int number=input.nextInt();<br>
+     Demo obj=new Demo();<br>
+     int recive =obj.prime(number);<br>
+     if(recive==1){<br>
+         System.out.println("Number is prime ");<br>
+     }else{<br>
+         System.out.println("Number is Not Prine");<br>
+     }<br>
+
+    }<br>
+}<br>
+<span>class</span> Demo{<br>
+    public int prime;<br>
+    Demo(){<br>
+        prime=0;<br>
+    }<br>
+    public int prime(int number){<br>
+        for(int i=2;i<=number;i++){<br>
+            if(number%i==0){<br>
+                prime++;<br>
+            }<br>
+        }<br>
+        return prime;<br>
+    }<br>
+}<br>
+</p></div>
+
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
